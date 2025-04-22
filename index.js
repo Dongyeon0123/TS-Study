@@ -107,3 +107,6 @@ function 결혼가능(money, house, charm) {
     }
 }
 console.log(100, true, '상');
+// void란, 함수가 아무것도 return하지 않을 때 사용.
+// 주로 출력, 알림, 이벤트 핸들러에 사용.
+// void가 아닌 string, number, boolean 등은 return이 있어야함.
