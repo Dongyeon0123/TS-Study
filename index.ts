@@ -55,3 +55,24 @@ class User {
         this.name = name;
     }
 }
+
+// TypeScript는 자동으로 타입을 씌워줌.
+let 회원 = 'park';
+
+// Q1. 이름, 나이, 출생지역을 변수로 저장
+let 정보 :string = 'Dong yeon Lee';
+let 나이 :number = 25;
+let 출생지역 :string = '경기도 수원'
+
+// Q2. 좋아하는 가수의 곡과 가수이름을 object에 저장.(문자만)
+let 가수 :{ 가수이름 :string, 노래 :string } = { 가수이름 : '아이유', 노래 : '아이와 나의 바다' };
+
+let project : {
+    member :string[],
+    days :number,
+    started: boolean
+  } = {
+    member : ['kim', 'park'],
+    days : 30,
+    started : true,
+  }

@@ -27,3 +27,16 @@ var User = /** @class */ (function () {
     }
     return User;
 }());
+// TypeScript는 자동으로 타입을 씌워줌.
+var 회원 = 'park';
+// Q1. 이름, 나이, 출생지역을 변수로 저장
+var 정보 = 'Dong yeon Lee';
+var 나이 = 25;
+var 출생지역 = '경기도 수원';
+// Q2. 좋아하는 가수의 곡과 가수이름을 object에 저장.(문자만)
+var 가수 = { 가수이름: '아이유', 노래: '아이와 나의 바다' };
+var project = {
+    member: ['kim', 'park'],
+    days: 30,
+    started: true,
+};
