@@ -123,6 +123,28 @@ function 함수5(x : number | string) :void {
 // String + number (가능)
 // number + number (가능)
 // 이외에는 불가능함.
+// 그래서 if문 & Typeof문으로 Type Narrowing을 써야함.
+function 내함수(x :number | string) {
+    let arr :number[] = [];
+
+    if (typeof x === "number") {
+        arr[0] = x;
+    } else {
+    }
+    // 주의 - if문 썼으면 끝까지 써야 안전함.
+    // else, else if 안 쓰면 에러로 잡아줄 수도 있음.
+
+    arr[1] = x as number; // assertion문법
+    // 왼쪽에 있는 변수를 넘버로 써주세요 라는 뜻.
+    // 용도 - 1. Narrowing할 때 씀.
+    // 2. 타입을 a에서 b로 변경 X - Union type에서 씀.
+    // 무슨 타입이 들어올지 100% 확신할 때 쓰는 것.
+    // 그래서 대부분 첫번째 if문 방법을 많이 사용함.
+
+    
+
+    // arr[0] = x;
+}
 
 function 이름5(x :string) :void {
     if(x) {
