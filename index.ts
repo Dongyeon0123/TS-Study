@@ -67,6 +67,7 @@ let 출생지역 :string = '경기도 수원'
 // Q2. 좋아하는 가수의 곡과 가수이름을 object에 저장.(문자만)
 let 가수 :{ 가수이름 :string, 노래 :string } = { 가수이름 : '아이유', 노래 : '아이와 나의 바다' };
 
+// Q3. member, days, started에 타입지정
 let project : {
     member :string[],
     days :number,

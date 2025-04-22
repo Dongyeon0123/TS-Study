@@ -35,6 +35,7 @@ var 나이 = 25;
 var 출생지역 = '경기도 수원';
 // Q2. 좋아하는 가수의 곡과 가수이름을 object에 저장.(문자만)
 var 가수 = { 가수이름: '아이유', 노래: '아이와 나의 바다' };
+// Q3. member, days, started에 타입지정
 var project = {
     member: ['kim', 'park'],
     days: 30,
