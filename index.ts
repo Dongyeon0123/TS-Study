@@ -98,3 +98,63 @@ let project : {
 }
 학교.score[4] = false;
 학교.friend = ['Lee' , 학교.teacher];
+
+function X2(a :number) :number {
+    return a * 2;
+}
+console.log (X2(5));
+
+function X(b? :number) :void {
+
+}
+// 위 코드에서 void는 실수로 뭔가를 return하는걸 사전에 막을 수 있음.
+// ?연산자는 들어올수도 있다 ~ 라는 뜻이긴 한데,
+// (b :number | undefined ) <= 이거랑 똑같음.
+
+function 함수5(x : number | string) :void {
+    if(typeof x === 'number') {
+        console.log (x + 3);
+    } // x의 타입이 숫자면.
+    else {
+        console.log ('숫자가 아닙니다.');
+    }
+}
+// 위 함수가 안되는 이유.
+// String + number (가능)
+// number + number (가능)
+// 이외에는 불가능함.
+
+function 이름5(x :string) :void {
+    if(x) {
+        console.log('안녕하세요 ' + x);
+    }
+    else {
+        console.log('입력이 안 됐습니다.');
+    }
+}
+// void는 return이 없어야함.
+
+function 자릿수세기(x : number | string) :number {
+    if(typeof x == 'string') {
+        return x.length;
+    } else {
+        return x.toString().length;
+    }
+}
+
+function 결혼가능(money :number, house :boolean, charm :string) :string | void {
+    let score :number = 0;
+    score += money;
+
+    if(house == true) {
+        score += 500;
+    }
+    if(charm == '상') {
+        score += 100;
+    }
+
+    if(score >= 600) {
+        return '결혼 가능';
+    }
+}
+console.log(100,true,'상');
