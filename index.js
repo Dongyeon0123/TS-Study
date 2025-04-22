@@ -11,6 +11,7 @@ var 배열 = ['park', 'son'];
 var 오브젝트 = { name: 'shim' };
 // name에는 문자만 들어올 수 있음.
 var 이름2 = 'kim';
+// 이렇게 두개의 타입을 지정하는것은 Union Type이라고함.
 var 이름3 = 'lee';
 // 1. 파라미터에 타입 지정을 하고싶으면,
 function 함수(파라미터) {
@@ -41,3 +42,16 @@ var project = {
     days: 30,
     started: true,
 };
+var 회원들 = [1, '2', 3];
+var 옵젝 = { a: 'kim' };
+var user = 'kim';
+var age = undefined;
+var married = false;
+var 철수 = [user, age, married];
+var 학교 = {
+    score: [100, 97, 84],
+    teacher: 'Phil',
+    friend: 'John'
+};
+학교.score[4] = false;
+학교.friend = ['Lee', 학교.teacher];

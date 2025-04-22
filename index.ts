@@ -22,6 +22,7 @@ let 이름2 : string | number = 'kim';
 // Type은 변수에 담아서 쓸 수 있음. (Type alias)
 // 타입 작명은 보통 첫글자를 대문자로 많이 함. (ex) Name)
 type 타입 = string | number;
+// 이렇게 두개의 타입을 지정하는것은 Union Type이라고함.
 let 이름3 : 타입 = 'lee'
 
 // 1. 파라미터에 타입 지정을 하고싶으면,
@@ -77,3 +78,23 @@ let project : {
     days : 30,
     started : true,
   }
+
+  let 회원들 :(number | string)[] = [1,'2',3];
+  let 옵젝 :{ a :string | number} = { a : 'kim' };
+
+  let user :string = 'kim';
+  let age :undefined = undefined;
+  let married :boolean = false; 
+  let 철수 :(string | undefined | boolean)[] = [user, age, married];
+
+  let 학교 : {
+    score :(number | boolean)[],
+    teacher :string,
+    friend :string | string[],
+  } = {
+    score : [100, 97, 84],
+    teacher : 'Phil',
+    friend : 'John'
+}
+학교.score[4] = false;
+학교.friend = ['Lee' , 학교.teacher];
